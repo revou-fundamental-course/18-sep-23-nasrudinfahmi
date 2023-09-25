@@ -1,0 +1,135 @@
+@media screen and (min-width: 640px) {
+  header.hero-header,
+  main {
+    padding-inline: 3rem;
+  }
+
+  header.hero-header {
+    padding-block: 0.6rem;
+  }
+
+  header .btn-menus {
+    display: none;
+  }
+
+  header nav {
+    position: static;
+    padding: 0;
+    transform: scaleY(1);
+    opacity: 1;
+    background: none;
+    box-shadow: none;
+  }
+
+  header nav ul {
+    flex-direction: row;
+  }
+
+  header nav ul li a {
+    padding: 1px 1rem;
+  }
+
+  header nav ul li a:hover {
+    background: none;
+  }
+
+  .hero-heading {
+    padding-inline: 7.2rem;
+  }
+
+  main {
+    padding-top: 3rem;
+  }
+
+  .content article.testimoni-buyer footer {
+    padding-left: 3rem;
+  }
+
+  .content article.testimoni-buyer footer .comment-buyer {
+    font-size: medium;
+  }
+
+  .benefits {
+    margin-top: 3.5rem;
+  }
+
+  .benefits h2 {
+    margin-bottom: 1.5rem;
+  }
+
+  .benefits h3.title-benefits {
+    margin-top: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  header .logo-wrapper {
+    font-size: 12px;
+  }
+
+  header nav ul li a {
+    font-size: medium;
+  }
+
+  .hero-heading {
+    padding-inline: 11.81rem;
+  }
+
+  .content-wrapper {
+    flex-direction: row;
+    gap: 1.45rem;
+    margin-top: 2.5rem;
+  }
+
+  .content article.testimoni-buyer footer {
+    padding-left: 1.3rem;
+  }
+
+  .content-wrapper .content {
+    flex: 1 1 70%;
+  }
+
+  .content-wrapper .contact-us {
+    flex: 1 1 30%;
+    height: max-content;
+    background: rgb(250, 250, 250);
+    padding-inline: 0.8rem;
+    padding-block: 1rem;
+  }
+
+  .contact-us form {
+    margin-top: 0;
+  }
+
+  form .text-contact {
+    font-size: smaller;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  header.hero-header,
+  main {
+    padding-inline: 5rem;
+  }
+
+  header.hero-header {
+    padding-block: 1rem;
+  }
+
+  .hero-heading {
+    padding-inline: 15.7rem;
+    font-size: xx-large;
+  }
+
+  .benefits h2,
+  form > h2 {
+    font-size: x-large;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  header.hero-header,
+  main {
+    padding-inline: 7rem;
+  }
+}
