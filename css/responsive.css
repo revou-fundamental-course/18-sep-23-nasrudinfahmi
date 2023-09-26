@@ -1,11 +1,14 @@
 @media screen and (min-width: 640px) {
   header.hero-header,
-  main {
+  .hero-sect,
+  .package-sect article,
+  .cta-sect,
+  .hero-footer {
     padding-inline: 3rem;
   }
 
   header.hero-header {
-    padding-block: 0.6rem;
+    padding-block: 0.8rem;
   }
 
   header .btn-menus {
@@ -23,10 +26,11 @@
 
   header nav ul {
     flex-direction: row;
+    gap: 1.5rem;
   }
 
   header nav ul li a {
-    padding: 1px 1rem;
+    padding: 1px 0;
   }
 
   header nav ul li a:hover {
@@ -34,7 +38,8 @@
   }
 
   .hero-heading {
-    padding-inline: 7.2rem;
+    font-size: 1.7rem;
+    padding-inline: 11.7%;
   }
 
   main {
@@ -42,27 +47,82 @@
   }
 
   .content article.testimoni-buyer footer {
-    padding-left: 3rem;
+    padding-left: 2rem;
   }
 
   .content article.testimoni-buyer footer .comment-buyer {
     font-size: medium;
   }
 
+  .btn-banner-prev,
+  .btn-banner-next {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .btn-banner-next {
+    right: 1rem;
+  }
+
+  .btn-banner-prev {
+    left: 1rem;
+  }
+
   .benefits {
     margin-top: 3.5rem;
   }
 
+  .hero-heading-package,
+  .title-cta {
+    font-size: 1.5rem;
+  }
+
   .benefits h2 {
-    margin-bottom: 1.5rem;
+    margin-bottom: 3rem;
   }
 
   .benefits h3.title-benefits {
-    margin-top: 1.5rem;
+    margin-top: 1.8rem;
+  }
+
+  .hero-heading-package {
+    margin-bottom: 5rem;
+    padding: 2.5rem 0;
+  }
+
+  .package-sect article {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+  }
+
+  .package p {
+    margin-bottom: 0;
+  }
+
+  .cta-sect {
+    margin-top: 4rem;
+  }
+
+  .text-benefits,
+  .text-cta {
+    font-size: 1rem;
+  }
+
+  .btn-cta {
+    padding: 0.5rem 1rem;
+  }
+
+  footer.hero-footer {
+    padding: 2rem 0;
   }
 }
 
 @media screen and (min-width: 768px) {
+  header.hero-header {
+    padding-block: 1rem;
+  }
+
   header .logo-wrapper {
     font-size: 12px;
   }
@@ -72,13 +132,14 @@
   }
 
   .hero-heading {
-    padding-inline: 11.81rem;
+    padding-inline: 19%;
+    padding-top: 1rem;
   }
 
   .content-wrapper {
     flex-direction: row;
     gap: 1.45rem;
-    margin-top: 2.5rem;
+    margin-top: 3.5rem;
   }
 
   .content article.testimoni-buyer footer {
@@ -89,26 +150,57 @@
     flex: 1 1 70%;
   }
 
+  .line {
+    width: 130px;
+  }
+
   .content-wrapper .contact-us {
     flex: 1 1 30%;
     height: max-content;
-    background: rgb(250, 250, 250);
     padding-inline: 0.8rem;
     padding-block: 1rem;
+    margin-top: 0;
   }
 
   .contact-us form {
     margin-top: 0;
   }
 
+  form > h2 {
+    margin-bottom: 0.8rem;
+  }
+
   form .text-contact {
     font-size: smaller;
+  }
+
+  .package-sect {
+    margin-top: 1rem;
+    padding-top: 3.5rem;
+  }
+
+  .hero-heading-package {
+    padding: 3rem 0;
+    margin-bottom: 6rem;
+  }
+
+  .package .icon-package img {
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 7px;
+  }
+
+  .cta-sect {
+    margin-top: 5rem;
   }
 }
 
 @media screen and (min-width: 1024px) {
   header.hero-header,
-  main {
+  .hero-sect,
+  .package-sect article,
+  .cta-sect,
+  .hero-footer {
     padding-inline: 5rem;
   }
 
@@ -116,20 +208,67 @@
     padding-block: 1rem;
   }
 
+  header nav ul {
+    gap: 1.9rem;
+  }
+
   .hero-heading {
-    padding-inline: 15.7rem;
     font-size: xx-large;
+  }
+
+  .sub-heading {
+    font-size: 0.9rem;
   }
 
   .benefits h2,
   form > h2 {
     font-size: x-large;
   }
+
+  form > h2 {
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+  }
+
+  form .text-contact {
+    font-size: 0.9rem;
+  }
+
+  .text-benefits {
+    font-size: 1rem;
+  }
+
+  .hero-heading-package {
+    font-size: 2rem;
+  }
+
+  .package-sect {
+    margin-top: 1.5rem;
+    padding-top: 4.4rem;
+  }
+
+  .package-sect article {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 3rem;
+  }
 }
 
 @media screen and (min-width: 1280px) {
   header.hero-header,
-  main {
+  .hero-sect {
     padding-inline: 7rem;
+  }
+
+  .hero-heading {
+    padding-inline: 26.82%;
+    padding-top: 2rem;
+  }
+
+  .content-wrapper {
+    margin-top: 4.5rem;
+  }
+
+  form .text-contact {
+    font-size: 0.92rem;
   }
 }

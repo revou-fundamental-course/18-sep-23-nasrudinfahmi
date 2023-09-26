@@ -20,20 +20,22 @@
       <nav>
         <ul>
           <li><a href="#">Home</a></li>
-          <li><a href="#">Our Package</a></li>
-          <li><a href="#">Call Us</a></li>
+          <li><a href="#packages">Our Package</a></li>
+          <li><a href="#callus">Call Us</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <section>
+      <section class="hero-sect">
         <h1 class="hero-heading">Top Rated E-Groceries Shop In Indonesian</h1>
         <p class="sub-heading">Every Day With best Ingredients</p>
         <div class="content-wrapper">
           <div class="content">
             <article class="testimoni-buyer">
               <header>
+                <button class="btn-banner-prev">&lt;</button>
+                <button class="btn-banner-next">&gt;</button>
                 <img
                   src="./imgs/sayur1.jpg"
                   alt="sayur.jpg"
@@ -59,6 +61,8 @@
                 </div>
               </footer>
             </article>
+
+            <span class="line"></span>
             <article class="benefits">
               <h2>Mengapa memilih kami</h2>
               <ol>
@@ -66,8 +70,9 @@
                   <div>
                     <h3 class="title-benefits">Beragam Pilihan</h3>
                     <p class="text-benefits">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Velit, nobis?
+                      Kami menyediakan berbagai jenis buah dan sayuran dari
+                      berbagai daerah dan musim, sehingga pelanggan memiliki
+                      banyak pilihan.
                     </p>
                   </div>
                 </li>
@@ -75,8 +80,9 @@
                   <div>
                     <h3 class="title-benefits">Pengiriman Cepat</h3>
                     <p class="text-benefits">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Velit, nobis?
+                      Layanan pengiriman kami cepat dan andal, sehingga
+                      pelanggan dapat menikmati produk segar dalam waktu
+                      singkat.
                     </p>
                   </div>
                 </li>
@@ -84,8 +90,9 @@
                   <div>
                     <h3 class="title-benefits">Harga Bersaing</h3>
                     <p class="text-benefits">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Velit, nobis?
+                      Kami menawarkan harga yang kompetitif untuk produk-produk
+                      berkualitas tinggi, sehingga pelanggan mendapatkan nilai
+                      yang baik.
                     </p>
                   </div>
                 </li>
@@ -94,12 +101,13 @@
           </div>
 
           <aside class="contact-us">
-            <form>
+            <form class="form-contact">
               <h2>Contact Us</h2>
               <p class="text-contact">
                 Kami akan menghubungi Anda dalam 1x24 jam setelah data kami
                 terima
               </p>
+              <span class="error-form"></span>
 
               <div class="fields-form">
                 <label for="fullname">
@@ -122,6 +130,16 @@
                     spellcheck="false"
                   />
                 </label>
+                <label for="tel">
+                  <span>Telp</span>
+                  <input
+                    type="tel"
+                    name="telp"
+                    id="telp"
+                    placeholder="Your phone number"
+                    spellcheck="false"
+                  />
+                </label>
                 <label for="message">
                   <span>Message</span>
                   <textarea
@@ -138,7 +156,96 @@
           </aside>
         </div>
       </section>
+
+      <!-- PACKAGE SECT -->
+      <section class="package-sect" id="packages">
+        <h1 class="hero-heading-package">Our Package</h1>
+        <article>
+          <div class="package">
+            <div class="icon-package">
+              <img src="./imgs/guarantee.png" alt="guarantee img" />
+            </div>
+            <div class="info-package">
+              <h2 class="title-package">Fresh Vegetable</h2>
+              <p>Sayuran segar langsung dari sumber pertanian terbaik</p>
+            </div>
+          </div>
+          <div class="package">
+            <div class="icon-package">
+              <img src="./imgs/guarantee.png" alt="guarantee img" />
+            </div>
+            <div class="info-package">
+              <h2 class="title-package">Fresh Fruits</h2>
+              <p>
+                Buah dengan kualitas terbaik dari lokal atau import dan harga
+                yang menarik
+              </p>
+            </div>
+          </div>
+          <div class="package">
+            <div class="icon-package">
+              <img src="./imgs/guarantee.png" alt="guarantee img" />
+            </div>
+            <div class="info-package">
+              <h2 class="title-package">Instant Delivery</h2>
+              <p>
+                Di kirim instan oleh kurir yang telah di training dengan SOP
+                untuk menjaga kondisi belanjaan Anda
+              </p>
+            </div>
+          </div>
+          <div class="package">
+            <div class="icon-package">
+              <img src="./imgs/lamp.png" alt="lamp img" />
+            </div>
+            <div class="info-package">
+              <h2 class="title-package">Kitchen Ingredient</h2>
+              <p>Bumbu dapur lengkap untuk keperluan memasak Anda</p>
+            </div>
+          </div>
+          <div class="package">
+            <div class="icon-package">
+              <img src="./imgs/lamp.png" alt="lamp img" />
+            </div>
+            <div class="info-package">
+              <h2 class="title-package">Kitchen set</h2>
+              <p>Segala jenis alat masak untuk membantu Anda memasak</p>
+            </div>
+          </div>
+          <div class="package">
+            <div class="icon-package">
+              <img src="./imgs/lamp.png" alt="lamp img" />
+            </div>
+            <div class="info-package">
+              <h2 class="title-package">Bundling set</h2>
+              <p>
+                Bingung masak apa? Sudah tersedia paket untuk memasak di dapur
+                kesayangan Anda
+              </p>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!-- CTA SECT -->
+      <section class="cta-sect" id="callus">
+        <h1 class="title-cta">Bawa Kesehatan ke Meja Anda</h1>
+        <p class="text-cta">
+          Nikmati manfaat kesehatan dari makanan berkualitas tinggi tanpa harus
+          meninggalkan rumah.
+        </p>
+        <button class="btn-cta">Pesan sekarang</button>
+      </section>
     </main>
+
+    <footer class="hero-footer">
+      <a href="#"><h3>E-Grecories</h3></a>
+      <span class="term-privacy">
+        <a href="">Term and Service</a>
+        <a href="">Privacy Policy</a>
+      </span>
+      <span>&copy; 2023 nasrudin fahmi</span>
+    </footer>
 
     <script src="./js/script.js"></script>
   </body>

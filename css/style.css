@@ -9,17 +9,30 @@
   font-family: poppins, sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: rgb(252, 252, 252);
+}
+
 header.hero-header {
-  position: relative;
+  position: sticky;
+  top: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-block: 0.6rem;
+  padding-block: 0.7rem;
   box-shadow: inset 0 -1px 0 0 rgba(190, 190, 190, 0.445);
+  background-color: #fff;
+  z-index: 9999;
 }
 
 header.hero-header,
-main {
+.hero-sect,
+.package-sect article,
+.cta-sect {
   padding-inline: 1rem;
 }
 
@@ -95,7 +108,7 @@ main {
 }
 
 .hero-heading {
-  padding-inline: 1.5rem;
+  padding-inline: 5.2%;
   font-size: 1.3rem;
   line-height: 1.4;
 }
@@ -103,9 +116,8 @@ main {
 .sub-heading {
   font-size: 0.8rem;
   padding-top: 0.85rem;
-  color: #8d8d8d;
-  font-weight: 400;
-  text-shadow: 1px 0 1px #949494a6;
+  color: #6e6e6e;
+  font-weight: 500;
 }
 
 .hero-heading,
@@ -128,10 +140,51 @@ main .content article.testimoni-buyer {
   width: 100%;
 }
 
+article.testimoni-buyer > header {
+  width: 100%;
+  position: relative;
+}
+
+.btn-banner-prev,
+.btn-banner-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1.4rem;
+  height: 1.4rem;
+  display: grid;
+  place-content: center;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.5);
+  background: rgb(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.btn-banner-prev:hover,
+.btn-banner-next:hover,
+.btn-banner-prev:focus,
+.btn-banner-next:focus {
+  color: #fff;
+  background: rgb(0, 0, 0, 0.7);
+}
+
+.btn-banner-prev {
+  left: 0.5rem;
+}
+
+.btn-banner-next {
+  right: 0.5rem;
+}
+
 article.testimoni-buyer .hero-banner {
   width: 100%;
   height: auto;
   aspect-ratio: 16/9;
+  object-fit: cover;
+  background-position: center;
   border-radius: 3px;
 }
 
@@ -185,20 +238,32 @@ article.testimoni-buyer .hero-banner {
   font-size: small;
 }
 
-.benefits,
-.contact-us form {
+.line {
+  display: block;
+  margin-top: 3rem;
+  margin-inline: auto;
+  width: 100px;
+  height: 2.5px;
+  background: #909090;
+  border-radius: 6px;
+}
+
+.benefits {
   margin-top: 2.5rem;
 }
 
 .benefits h2 {
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
   text-align: center;
 }
 
 .benefits h3.title-benefits {
+  margin-top: 1rem;
+}
+
+.benefits h3.title-benefits {
   font-size: 1.1rem;
-  margin-top: 0.5rem;
   margin-bottom: 0.12rem;
 }
 
@@ -206,17 +271,23 @@ article.testimoni-buyer .hero-banner {
   padding-left: 1rem;
 }
 
-.text-benefits {
+.text-benefits,
+.text-cta {
   font-size: 0.9rem;
 }
 
 .contact-us {
   flex-grow: 1;
   flex-shrink: 1;
+  padding: 1rem;
+  margin-top: 5rem;
+  background: rgb(240, 240, 240);
+  border-radius: 0.5rem;
 }
 
 .contact-us form {
   width: 100%;
+  margin-top: 1rem;
 }
 
 form > h2 {
@@ -226,14 +297,24 @@ form > h2 {
 }
 
 form .text-contact {
-  margin-bottom: 1.1rem;
+  margin-bottom: 1.7rem;
   text-align: center;
+  font-size: 0.9rem;
 }
 
 form .fields-form {
   display: flex;
   flex-direction: column;
   gap: 0.25rem;
+}
+
+.error-form {
+  font-size: small;
+  font-weight: 500;
+  display: block;
+  text-align: center;
+  padding-bottom: 0.7rem;
+  color: #ff0000;
 }
 
 .fields-form label {
@@ -258,9 +339,10 @@ form .fields-form {
   background: #222;
   color: #fff;
   border-radius: 4px;
-  padding-block: 0.3rem;
+  padding-block: 0.5rem;
   margin-top: 1rem;
   border: none;
+  cursor: pointer;
 }
 
 .fields-form .btn-submit:hover {
@@ -269,4 +351,102 @@ form .fields-form {
 
 .fields-form .btn-submit:active {
   background: #222;
+}
+
+/* PACKAGE */
+.package-sect {
+  padding-top: 3rem;
+  margin-top: 2rem;
+}
+
+.hero-heading-package,
+.title-cta {
+  font-size: 1.4rem;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.hero-heading-package {
+  padding: 2rem 0;
+  background: rgb(220, 220, 220);
+  margin-bottom: 3rem;
+}
+
+.package-sect article .package .title-package {
+  font-size: 1.2rem;
+  margin-bottom: 0.2rem;
+}
+
+.package {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.7rem;
+}
+
+.package .icon-package img {
+  width: 2rem;
+  height: 2rem;
+  padding: 4px;
+  margin-top: 0.25rem;
+  aspect-ratio: 1/1;
+  background-color: #ffef94;
+  /* background: rgb(245, 245, 245); */
+  border-radius: 50%;
+  border: 1px solid rgb(230, 230, 230);
+}
+
+.package p {
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+/* CTA SECT */
+.cta-sect {
+  margin-top: 3rem;
+  padding-block: 3rem;
+  border-block: 1px solid rgb(201, 201, 201);
+}
+
+.text-cta {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.btn-cta {
+  display: block;
+  margin-inline: auto;
+  padding: 0.4rem 1rem;
+  font-weight: 500;
+  box-shadow: 1px 1px 3px 1px rgba(163, 163, 163, 0.822);
+  background-color: #131313;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-cta:hover {
+  background-color: #131313f8;
+}
+
+.btn-cta:active {
+  box-shadow: none;
+  background-color: #131313;
+}
+
+footer.hero-footer {
+  display: flex;
+  padding: 1rem 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(230, 230, 230);
+}
+
+footer .term-privacy {
+  display: flex;
+  gap: 0.5rem;
+  font-size: small;
+  margin-top: 0.5rem;
 }
