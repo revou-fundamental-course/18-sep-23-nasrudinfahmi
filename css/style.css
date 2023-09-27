@@ -199,9 +199,10 @@ article.testimoni-buyer .hero-banner {
 }
 
 .content article.testimoni-buyer footer .comment-buyer {
-  font-weight: 300;
+  font-weight: 400;
   font-style: italic;
   font-size: smaller;
+  color: #000;
 }
 
 .content article.testimoni-buyer footer .buyer {
@@ -312,8 +313,8 @@ form .fields-form {
   font-size: small;
   font-weight: 500;
   display: block;
-  text-align: center;
-  padding-bottom: 0.7rem;
+  padding-bottom: 0.1rem;
+  padding-left: 0.2rem;
   color: #ff0000;
 }
 

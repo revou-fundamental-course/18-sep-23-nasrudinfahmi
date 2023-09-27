@@ -142,16 +142,13 @@
     margin-top: 3.5rem;
   }
 
-  .content article.testimoni-buyer footer {
-    padding-left: 1.3rem;
-  }
-
   .content-wrapper .content {
     flex: 1 1 70%;
   }
 
   .line {
     width: 130px;
+    margin-top: 3.5rem;
   }
 
   .content-wrapper .contact-us {
@@ -268,7 +265,170 @@
     margin-top: 4.5rem;
   }
 
+  .content article.testimoni-buyer footer {
+    padding-top: 2rem;
+  }
+
   form .text-contact {
     font-size: 0.92rem;
+  }
+
+  .line {
+    margin-top: 4rem;
+  }
+}
+
+@media screen and (min-width: 1536px) {
+  header.hero-header {
+    padding-block: 1.2rem;
+  }
+
+  header .logo-wrapper {
+    font-size: 1.15rem;
+  }
+
+  header nav ul li a {
+    font-size: x-large;
+  }
+
+  .hero-heading {
+    padding-inline: 24.16%;
+    padding-top: 3rem;
+    font-size: xxx-large;
+  }
+
+  .sub-heading {
+    font-size: 1.2rem;
+  }
+
+  .content-wrapper {
+    margin-top: 6rem;
+    gap: 3rem;
+  }
+
+  .content-wrapper .contact-us {
+    padding-inline: 1.5rem;
+  }
+
+  .fields-form .btn-submit {
+    margin-top: 2rem;
+    padding-block: 0.75rem;
+    font-size: medium;
+  }
+
+  .benefits h2,
+  form > h2 {
+    font-size: 2.2rem;
+  }
+
+  .benefits h2 {
+    margin-bottom: 5rem;
+  }
+
+  form .text-contact {
+    font-size: 1rem;
+  }
+
+  .fields-form label span {
+    font-size: medium;
+  }
+
+  .fields-form label input,
+  .fields-form label textarea {
+    padding: 0.6rem 1rem;
+  }
+
+  .buyer .img-buyer-wrapper {
+    width: 50px;
+    height: 50px;
+  }
+
+  .buyer .img-buyer-wrapper .img-buyer {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .line {
+    margin-top: 7.5rem;
+  }
+
+  .benefits {
+    margin-top: 5rem;
+  }
+
+  .content article.testimoni-buyer footer {
+    padding-top: 3rem;
+    padding-left: 2rem;
+  }
+
+  .buyer .bio-buyer .buyername {
+    font-size: x-large;
+  }
+
+  .buyer .bio-buyer .status-buyer {
+    font-size: large;
+  }
+
+  .benefits h3.title-benefits {
+    margin-top: 2.4rem;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .package-sect {
+    padding-top: 6.4rem;
+  }
+
+  .text-benefits,
+  .package p,
+  .text-cta {
+    font-size: 1.11rem;
+  }
+
+  .package-sect article {
+    gap: 4rem;
+  }
+
+  .package .icon-package img {
+    width: 3.1rem;
+    height: 3.1rem;
+    padding: 7.5px;
+  }
+
+  ol > li::marker {
+    font-size: 1.4rem;
+  }
+
+  .hero-heading-package {
+    font-size: 2.5rem;
+    padding: 5rem 0;
+    margin-bottom: 7.5rem;
+  }
+
+  .package {
+    gap: 1.1rem;
+  }
+
+  .package-sect article .package .title-package {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .title-cta {
+    font-size: 2.1rem;
+  }
+
+  .btn-cta {
+    font-size: 1rem;
+    padding: 0.7rem 3rem;
+  }
+
+  footer > a > h3 {
+    font-size: 1.5rem;
+  }
+
+  footer > span a,
+  footer > span.copy {
+    font-size: 1rem;
   }
 }

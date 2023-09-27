@@ -8,6 +8,7 @@
     <title>Mini coding project revou</title>
   </head>
   <body>
+    <!-- === HERO HEADER === -->
     <header class="hero-header">
       <a href="#" class="logo-wrapper">
         <h1>E-Groceries</h1>
@@ -26,7 +27,9 @@
       </nav>
     </header>
 
+    <!-- === HERO MAIN === -->
     <main>
+      <!-- HERO SECT -->
       <section class="hero-sect">
         <h1 class="hero-heading">Top Rated E-Groceries Shop In Indonesian</h1>
         <p class="sub-heading">Every Day With best Ingredients</p>
@@ -63,6 +66,7 @@
             </article>
 
             <span class="line"></span>
+
             <article class="benefits">
               <h2>Mengapa memilih kami</h2>
               <ol>
@@ -107,7 +111,6 @@
                 Kami akan menghubungi Anda dalam 1x24 jam setelah data kami
                 terima
               </p>
-              <span class="error-form"></span>
 
               <div class="fields-form">
                 <label for="fullname">
@@ -119,6 +122,7 @@
                     placeholder="Fullname"
                     spellcheck="false"
                   />
+                  <span class="error-form error-name"></span>
                 </label>
                 <label for="email">
                   <span>Email</span>
@@ -129,6 +133,7 @@
                     placeholder="example@gmail.com"
                     spellcheck="false"
                   />
+                  <span class="error-form error-email"></span>
                 </label>
                 <label for="tel">
                   <span>Telp</span>
@@ -139,6 +144,7 @@
                     placeholder="Your phone number"
                     spellcheck="false"
                   />
+                  <span class="error-form error-telp"></span>
                 </label>
                 <label for="message">
                   <span>Message</span>
@@ -149,6 +155,7 @@
                     spellcheck="false"
                     placeholder="Type message here"
                   ></textarea>
+                  <span class="error-form error-message"></span>
                 </label>
                 <button class="btn-submit">Kirim</button>
               </div>
@@ -238,13 +245,21 @@
       </section>
     </main>
 
+    <!-- === HERO FOOTER === -->
     <footer class="hero-footer">
       <a href="#"><h3>E-Grecories</h3></a>
       <span class="term-privacy">
         <a href="">Term and Service</a>
         <a href="">Privacy Policy</a>
       </span>
-      <span>&copy; 2023 nasrudin fahmi</span>
+      <span class="copy"
+        >&copy; 2023
+        <a
+          href="https://github.com/revou-fundamental-course/18-sep-23-nasrudinfahmi"
+          target="_blank"
+          >nasrudin fahmi</a
+        ></span
+      >
     </footer>
 
     <script src="./js/script.js"></script>
